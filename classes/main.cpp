@@ -37,7 +37,7 @@ public:
     { this->tusksSize = tusksSize; }
     void breathe()     { cout << this->name << " make it one more time" << endl; }
     void waterInTrunk(){ cout << "filled the trunk with water" << endl; }
-    ~Elephant()        { cout << "was killed" << endl; }
+    //~Elephant()        { cout << "was killed" << endl; }
 };
 
 class Cow : public Animal {
@@ -52,7 +52,7 @@ public:
     }
     void breathe() { cout << this->name <<"make it two more time" << endl; }
     void milk()    { cout << "give " << this->milkBucketCount << " at noon" << endl; }
-    ~Cow()         { cout << "was killed" << endl; }
+    //~Cow()         { cout << "was killed" << endl; }
 };
 
 class Cat : public Animal {
@@ -65,7 +65,6 @@ public:
         if (this->numberOfKittens > 1) cout << this->name << " have " << this->numberOfKittens << " kittens" << endl;
         else cout << this->name << " have " << this->numberOfKittens << " kitten" << endl;
     }
-    ~Cat()         { cout << "was killed" << endl; }
 };
 
 class Chameleon : public Animal {
@@ -75,13 +74,12 @@ public:
         cout << this->name << " changed the color from " << this->color << " to " << newColor << endl;
         this->color = newColor;
     }
-    ~Chameleon()         { cout << "was killed" << endl; }
 };
 
 int main() {
-    Cow *cow = new Cow("Burenka", "Mammal", "mooo", "grass", "multi", 4, 6, 2);
+/*    Cow *cow = new Cow("Burenka", "Mammal", "mooo", "grass", "multi", 4, 6, 2);
     Elephant *eleph = new Elephant("Djambo", "Mammal", "BLOWING", "grass and foliage", "grey", 9, 10);
-    /*
+    *//*
     cow->breathe();
     cow->milk();
     cow->meal();
@@ -92,9 +90,9 @@ int main() {
     eleph->breathe();
     eleph->waterInTrunk();
     eleph->meal();
+    *//*
     delete eleph;
-    delete cow;
-    */
+    delete cow;*/
 
     Cat *cat = new Cat("Mira", "Mammal", "meow", "fish", "white", 2, 3);
     cat->kittens();
