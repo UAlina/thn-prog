@@ -65,6 +65,7 @@ public:
         if (this->numberOfKittens > 1) cout << this->name << " have " << this->numberOfKittens << " kittens" << endl;
         else cout << this->name << " have " << this->numberOfKittens << " kitten" << endl;
     }
+    ~Cat()         { cout << "was killed" << endl; }
 };
 
 class Chameleon : public Animal {
@@ -74,6 +75,7 @@ public:
         cout << this->name << " changed the color from " << this->color << " to " << newColor << endl;
         this->color = newColor;
     }
+    ~Chameleon()         { cout << "was killed" << endl; }
 };
 
 int main() {
