@@ -103,4 +103,7 @@ int main() {
     chmln->changeColor("yellow");
     chmln->changeColor("red");
     chmln->changeColor("green");
+
+    delete cat;
+    delete chmln;
 }
